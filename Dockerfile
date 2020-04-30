@@ -12,7 +12,7 @@ RUN curl -O https://downloads.apache.org/tomcat/tomcat-8/v8.5.54/bin/apache-tomc
     java -version
 
 WORKDIR /opt/tomcat/webapps
-COPY first-warexample.war /opt/tomcat/webapps
+COPY build/libs/first-warexample.war /opt/tomcat/webapps
 
 EXPOSE 8080
 
