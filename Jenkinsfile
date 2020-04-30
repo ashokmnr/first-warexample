@@ -46,7 +46,7 @@ pipeline {
                     # Pushing docker tagged image to us-east-1 ecr
                     docker push 393492168443.dkr.ecr.us-east-1.amazonaws.com/dev-images:${IMAGE_TAG}
                     # Remove docker image after pushing to us-east-1 ecr
-                    docker rmi -f 3492168443.dkr.ecr.us-east-1.amazonaws.com/dev-images:${IMAGE_TAG}
+                    docker rmi -f 393492168443.dkr.ecr.us-east-1.amazonaws.com/dev-images:${IMAGE_TAG}
                 """
             }
         }
